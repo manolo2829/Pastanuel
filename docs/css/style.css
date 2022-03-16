@@ -830,6 +830,12 @@
     padding-top: 100px;
 }
 
+.reviews__head__body h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
 .reviews__main{
     display: flex;
     justify-content: center;
@@ -866,6 +872,15 @@
 }
 
 @media (min-width: 1024px){
+
+    .reviews__head__body{
+        height: 60vh;
+    }
+
+    .reviews__head__body h2{
+        font-size: 60px;
+    }
+
     .reviews__main{
         flex-direction: row;
         justify-content: space-around;
@@ -876,7 +891,96 @@
     }
 
     .reviews__main__img{
-        width: 50vw;
+        width: 40vw;
         height: 100vh;
+    }
+}
+
+/*---CONTACT---*/
+
+.contact__head{
+    background: url('../img/chef-939437_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact__head__body{
+    background-color: rgba(0, 0, 0, 0.600);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.contact__head__title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.contact__main__body{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.contact__main__title{
+    text-align: center;
+    font-size: 25px;
+    padding: 40px 0;
+}
+
+.contact__main__cards{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact__main__cards a{
+    text-decoration: none;
+    color: #000;
+}
+
+.contact__main__card{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.75);
+    transition: all 1s;
+}
+
+.contact__main__card i{
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.contact__main__card:hover{
+    transform: scale(1.05);
+}
+
+.contact__map{
+    margin-top: 50px;
+}
+
+@media (min-width: 1024px){
+    .contact__head__body{
+        height: 60vh;
+    }
+
+    .contact__head__title{
+        font-size: 60px;
     }
 }
